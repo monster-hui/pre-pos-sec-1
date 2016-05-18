@@ -1,10 +1,10 @@
 function collect_same_elements(collection_a, collection_b) {
-	var a=collection_a.join(',');
+	var b=collection_b.join(',');
 	var same_elements=[];
-	for(var i=0;i<collection_b.length;i++){
-		var form=new RegExp(collection_b[i]);
-		if(form.test(a)){
-		same_elements.push(collection_b[i]);
+	for(var i=0;i<collection_a.length;i++){
+		var form=new RegExp(collection_a[i]);
+		if(form.test(b)){
+		same_elements.push(collection_a[i]);
 		}
 	}
 	return same_elements
